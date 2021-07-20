@@ -4,33 +4,47 @@
     padding: 0;
 }
 body {
-    padding: 1rem 2rem 1rem 2rem;
+     list-style: none;
+     
 }
+
+
+/* Navbar */
 .navbar {
     display: flex;
+    position: fixed;
+    left: 0; 
+    top: 0;      
+    width: 100%;
+    background-color: rgb(151, 151, 151);
+    padding: 1rem 2rem 1rem 2rem;   
 }
 .brand {
     padding-top: 0.5rem;
     padding-left: 0.3rem;
 }
 .fav div{
-    padding: 1rem 0 0 4rem;
+    padding: 1.4rem 0 0 4rem;
 }
 .search-profile{
     display: flex;
     justify-content: flex-end;
     width: 100%;
     padding-top:1rem;
+    padding-left: 2rem;
     position: relative;
 }
 .bell{
     padding-left: 2rem;
+    padding-right: 3rem;
+    padding: 0.4rem 3rem 0 2rem;
 }
 .search-input {
     position: relative;
+    padding: 0.4rem 0 0 0;
 }
 .search-input input{
-    width: 12rem;
+    width: 90%;
     outline: none;
     border: none;
     border-radius: 6px;
@@ -41,9 +55,90 @@ body {
     position: absolute;
     cursor: pointer;
     left: 0.3rem;
-    top: 0.4rem;
+    top: 0.6rem;
     font-size: 13px;
 }
 .search{
     padding: 3px 23px 3px 1.5rem;
 }
+.profile-pic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* ASIDEBAR */
+.queue-album {
+    width:3rem;
+}
+.far {
+    font-size: 10px;
+    padding-left: 8rem;
+    
+}
+.item3{
+    padding-top: 2px;
+}
+.list-item{
+    display: flex;
+}
+.queue{
+    position: fixed;
+    top: 10rem;
+    right:4rem;
+}
+.queue-list{
+    padding: 2rem 1rem 0 0.5rem;
+    overflow-y: scroll;
+    height: 30rem;
+}
+
+ /* Hide scrollbar for Chrome, Safari and Opera */
+.queue-list::-webkit-scrollbar{
+    display: none;
+}
+
+  
+/* Hide scrollbar for IE, Edge and Firefox */
+  .queue-list {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  } 
+
+.item2 {
+    padding: 2px 0 0 6px;
+    font-size: 15px;
+}
+.item-author {
+    font-size: 12px;
+}
+
+
+/* Card  Section*/
+.card {
+    display:flex;
+    margin-left: 6rem;
+}
+.card-item {
+    margin-top: 10rem;
+}
+
+.card-img{
+    width:20rem;
+}
+
+.card-1{
+    margin-top: 12rem;
+}
+.card-2{
+    margin-left: -6px;
+    z-index:3;
+}
+.card-3{
+    margin-left: -6px;
+    margin-top: 12rem;
+}
+.card-item-2 {
+    width: 25rem;
+}
+
